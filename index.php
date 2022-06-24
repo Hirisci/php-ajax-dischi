@@ -35,9 +35,6 @@ require_once __DIR__ . "../server/database.php";
                     echo "<h4 class='card__title'>{$album["title"]}</h4>";
                     echo " <div class='card__info'><div>{$album["author"]}</div><div>{$album["year"]}</div></div>"
                     ?>
-
-
-
                 </div>
             <?php } ?>
         </div>
