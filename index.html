@@ -35,7 +35,15 @@
           <img src="img/spotify-logo.png" alt="" class="header__logo" />
         </div>
         <div class="header__dx">
-          <input class="header__text-box" type="text" name="text" id="text" />
+          <select
+            name="select-genre"
+            id="genre"
+            v-model="filter"
+            @change="receiveList(filter)"
+          >
+            <option value="all">all</option>
+            <option v-for="type in genreList" :value="type">{{type}}</option>
+          </select>
         </div>
       </header>
       <main>
